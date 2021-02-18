@@ -51,9 +51,10 @@ def task_4_3(words):
 
 def task_5(lst1, lst2):
     """
-        Здесь должен быть ваш код.
-        Переменные lst1 и lst2 - два данных списка.
-        Финальное значение должно быть помещено в переменную diff.
+num = int(input())
+members = [input().split() for _ in range(num)]
+for i in sorted(members, key=lambda x: int(x[1]), reverse=True):
+print(i[0])
         """
 
     return diff
@@ -61,9 +62,11 @@ def task_5(lst1, lst2):
 
 def task_6(lst):
     """
-        Здесь должен быть ваш код.
-        Переменная lst - ваш список.
-        Финальное значение должно быть помещено в переменную res.
+a = set("3217659")
+b = set("123")
+z = list(a.difference(b))
+z.sort()
+print(z)
         """
 
     return res
